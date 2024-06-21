@@ -1,0 +1,123 @@
+/*
+Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.2.2
+*/
+/* for all templates and grids */
+body {
+	text-align:center;
+	margin: 0;
+    padding: 0;
+    height: 100vh;
+	background-repeat: no-repeat;
+	background-color: white;
+    /* background-image: linear-gradient(to bottom, #0b2d46, #092330); */
+}
+
+#ft{clear:both;}
+/**/
+/* 750 centered, and backward compatibility */ 
+#doc,.yui-t7 {
+	margin:auto;text-align:left;
+	width:57.69em;min-width:750px;}
+
+.logo-container {
+	height: 200px; /* 로고 컨테이너의 높이 */
+	background-color: darkslategray;
+	background-image: url(../images/team/logo2.png); /* 배경 이미지 설정 */
+	background-size: contain; /* 배경 이미지를 요소에 맞게 크기 조정 */
+	background-repeat: no-repeat; /* 배경 이미지 반복 제거 */
+	background-position: center; /* 배경 이미지를 가운데 정렬 */
+	margin-bottom: 10px;
+	padding-left: 150px;
+	clear:both;
+}
+
+/* below required for all fluid grids; adjust widths and margins above accordingly */
+
+/* to preserve source-order independence for Gecko */
+.yui-b{position:relative;}
+.yui-b{_position:static;} /* for IE < 7 */
+#yui-main .yui-b{position:static;} 
+
+#yui-main {width:100%;}
+
+.yui-t7 #yui-main .yui-b {
+	display:block;margin:0 0 1em 0;
+}
+
+.yui-g {
+    margin-bottom: 15px; /* 하단 마진을 20px로 설정 (필요에 따라 조정) */
+}
+
+a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: inherit; /* 부모 요소의 색상 상속 */
+    cursor: default; /* 커서를 기본형태로 변경 */
+}
+
+h2 {
+    color: ivory; /* 폰트 색상을 빨간색으로 지정 */
+}
+
+#yui-main .yui-b {float:none;width:auto;}
+/* GRIDS (not TEMPLATES) */
+.yui-g .yui-u{float:right;display:inline;}
+.yui-g div.first{float:left;}
+.yui-g .yui-u{width:49.1%;}
+
+.yui-g:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+/* Basic Element Formatting */	
+.content{
+	display: flex;
+	height:300px;
+	background: lightgray;
+	border-top:#FFFFFF 2px solid;
+	margin:0;
+	padding:0;
+	}
+
+.content-txt,.content-img{
+	flex: 1;
+}
+
+.content h1 {
+	font-size: 20px;
+	color: black;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.5;
+}
+
+.content p {
+	font-size: 15px;
+	color: black;
+	margin-bottom: 3px;
+	margin-top: 3px;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 1.5;
+}
+
+#footer{
+	height:75px;
+	background:darkslategray;
+	border-top:#FFFFFF 2px solid;
+	margin:0;
+	padding:0;
+	padding-bottom: 5px;
+	text-align:center;
+	}
+	
